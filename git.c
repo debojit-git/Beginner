@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include<conio.h>
 
 int main(void)
 {
@@ -8,7 +9,7 @@ int main(void)
 	printf("Enter a non-negative integer: ");
 	scanf("%d", &number);
 
-	if (number < 0) {
+	if (number < 0){
 		printf("Factorial is not defined for negative numbers.\n");
 		return 1;
 	}
@@ -18,5 +19,6 @@ int main(void)
 	}
 
 	printf("Factorial of %d = %llu\n", number, factorial);
+	getchar(); // Wait for user input before closing the console window
 	return 0;
 }
