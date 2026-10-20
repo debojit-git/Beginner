@@ -1,1 +1,11 @@
-.gitattributes
+# Compiled C/C++ executables
+*.exe
+*.out
+
+# Object files
+*.o
+*.obj
+
+# Debug/build output
+*.pdb
+*.ilk
