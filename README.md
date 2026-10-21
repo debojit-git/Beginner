@@ -1,28 +1,27 @@
 # Beginner
 
-A collection of beginner-friendly C programs I'm writing while learning and practising programming.
-
-I'm starting with the fundamentals, keeping the code simple, and improving one problem at a time. Suggestions and corrections are welcome!
+A collection of small C programs created while learning programming fundamentals. Each exercise focuses on a specific concept, from loops and conditionals to arrays and matrices.
 
 ## Programs
 
-| File | What it practises |
-| --- | --- |
-| `git.c` | Factorial using a loop and handling negative input |
-| `git_2.c` | Finding the greatest of three numbers using conditionals |
-| `matrix_multiplication.c` | Multiplication of two 3 × 3 matrices |
-| `trace_ofsum_matrix.c` | Adding two 3 × 3 matrices and finding the trace of their sum |
+| File | Description | Concepts |
+| --- | --- | --- |
+| `git.c` | Calculates the factorial of a non-negative integer | Loops, input validation |
+| `git_2.c` | Finds the greatest of three numbers | Conditionals |
+| `matrix_multiplication.c` | Multiplies two 3 × 3 matrices | Arrays, nested loops |
+| `trace_ofsum_matrix.c` | Adds two 3 × 3 matrices and finds the trace of the sum | Arrays, nested loops |
+| `No._guessing_game.c` | Number guessing game with higher/lower hints | Random numbers, loops, input/output |
 
 ## Requirements
 
-- A C compiler, such as GCC
+- GCC or another C compiler
 - A terminal or command prompt
 
 ## Compile and run
 
-From the repository folder, compile a program with GCC:
+Compile a program from the repository folder. For example, to build the factorial exercise:
 
-```bash
+```sh
 gcc git.c -o factorial
 ```
 
@@ -32,19 +31,36 @@ Run it on Windows:
 .\factorial.exe
 ```
 
-On Linux or macOS, run it with:
+Run it on Linux or macOS:
 
-```bash
+```sh
 ./factorial
 ```
 
-Replace `git.c` and `factorial` with the source filename and output name for another program.
+### Number guessing game
 
-## What I'm learning
+Build the game:
 
-- C basics, input/output, and conditionals
-- Loops and problem-solving
-- Arrays and matrices
-- Writing clearer, more reliable programs
+```sh
+gcc No._guessing_game.c -o number_guessing_game
+```
 
-This repository is a learning log, so the programs may improve as I learn more.
+Run it on Windows:
+
+```powershell
+.\number_guessing_game.exe
+```
+
+Run it on Linux or macOS:
+
+```sh
+./number_guessing_game
+```
+
+The game selects a number from 1 to 100. Enter guesses to receive higher or lower hints until you find the number.
+
+Replace the source filename and output name in the commands to build a different exercise.
+
+## About
+
+This repository is a learning log. Programs may change as new concepts are practised, and suggestions are welcome.
